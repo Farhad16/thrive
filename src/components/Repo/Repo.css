@@ -1,0 +1,163 @@
+.repo {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.routine-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FBFFFF;
+}
+
+.routine-container .routine-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 40px;
+}
+
+.routine-container .routine-icon img {
+  margin-right: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+.routine-container .routine-icon p {
+  width: 88px;
+  height: 33px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+}
+
+.routine-container .nextClass-container {
+  width: 356px;
+  height: 264px;
+  background: #E9FFF9;
+  border: 1px solid #0652DD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 30px 20px;
+}
+
+.routine-container .nextClass-container .nextClass-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 59px;
+  background: #0652DD;
+  color: #FFFFFF;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0px 15px;
+}
+
+.routine-container .nextClass-container .nextClass-header h3 {
+  font-family: Exo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.routine-container .nextClass-container .nextClass-header small {
+  font-size: 10px;
+  line-height: 13px;
+  margin-right: 10px;
+}
+
+.routine-container .nextClass-container .nextClass-header span {
+  color: #FFD791;
+}
+
+.routine-container .nextClass-container .nextClass-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.routine-container .nextClass-container .nextClass-content .class-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0652DD;
+  margin: 20px 0px;
+}
+
+.routine-container .nextClass-container .nextClass-content .class-time {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #22B573;
+}
+
+.routine-container .nextClass-container .nextClass-content .class-date {
+  font-weight: bold;
+  font-size: 14px;
+  color: #22B573;
+}
+
+.routine-container .nextClass-container .nextClass-content .join-now {
+  border: none;
+  width: 159px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #7858BB;
+  -webkit-box-shadow: 0px -4px 0px #FFBE3D;
+          box-shadow: 0px -4px 0px #FFBE3D;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=Repo.css.map */

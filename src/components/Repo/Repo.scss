@@ -1,0 +1,122 @@
+.repo {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.routine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #FBFFFF;
+
+  .routine-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+
+    img {
+      margin-right: 15px;
+      width: 26px;
+      height: 26px;
+    }
+
+    p {
+      width: 88px;
+      height: 33px;
+      font-family: Exo;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 33px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+
+  .nextClass-container {
+    width: 356px;
+    height: 264px;
+    background: #E9FFF9;
+    border: 1px solid #0652DD;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px 20px;
+
+    .nextClass-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 59px;
+      background: #0652DD;
+      color: #FFFFFF;
+      border-radius: 10px 10px 0px 0px;
+      padding: 0px 15px;
+
+      h3 {
+        font-family: Exo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 33px;
+      }
+
+      small {
+        font-size: 10px;
+        line-height: 13px;
+        margin-right: 10px;
+      }
+
+      span {
+        color: #FFD791;
+      }
+    }
+
+    .nextClass-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .class-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #0652DD;
+        margin: 20px 0px;
+      }
+
+      .class-time {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #22B573;
+      }
+
+      .class-date {
+        font-weight: bold;
+        font-size: 14px;
+        color: #22B573;
+      }
+
+      .join-now {
+        border: none;
+        width: 159px;
+        height: 38px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+        background: #7858BB;
+        box-shadow: 0px -4px 0px #FFBE3D;
+        border-radius: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

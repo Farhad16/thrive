@@ -1,0 +1,215 @@
+.userProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FBFFFF;
+}
+
+.userProfile .showPath {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+}
+
+.userProfile .showPath img {
+  width: 24px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.userProfile .showPath p {
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 33px;
+  width: 174px;
+  height: 33px;
+}
+
+.userProfile .showPath .homeText {
+  color: #8E8E8E;
+  padding-right: 5px;
+}
+
+.userProfile .showPath .profileText {
+  padding-left: 5px;
+}
+
+.userProfile .profile-pic {
+  margin-top: 50px;
+  width: 152px;
+  height: 152px;
+  border: 10px solid #0652DD;
+  border-radius: 50%;
+}
+
+.userProfile .edit-btn {
+  border: none;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 54px;
+  height: 23px;
+  background: #33B67B;
+  -webkit-box-shadow: 0px -4px 0px #1C8757;
+          box-shadow: 0px -4px 0px #1C8757;
+  border-radius: 999px;
+  color: #ffffff;
+}
+
+.userProfile .edit-btn img {
+  padding-right: 5px;
+}
+
+.userProfile .name {
+  margin-top: 30px;
+  height: 37px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+
+.userProfile .about {
+  border: 1px solid #8E8E8E;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.userProfile .about p {
+  border-bottom: 1px solid #8E8E8E;
+  width: 155px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0652DD;
+}
+
+.userProfile .about p:first-child {
+  color: #686868;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.userProfile .about p:last-child {
+  border: none;
+}
+
+.userProfile .email-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300px;
+  height: 27px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #686868;
+  margin-bottom: 15px;
+}
+
+.userProfile .email-pass span {
+  font-weight: 500;
+}
+
+.userProfile .email-pass button {
+  width: 71.27px;
+  height: 27.72px;
+  border: 2px solid #757370;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #686868;
+  background: #FBFFFF;
+  cursor: pointer;
+}
+
+.userProfile .logout-btn {
+  border: none;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 30px;
+  background: #B63333;
+  -webkit-box-shadow: 0px -4px 0px #871C1C;
+          box-shadow: 0px -4px 0px #871C1C;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: Exo;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 16px;
+}
+/*# sourceMappingURL=Profile.css.map */
