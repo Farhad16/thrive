@@ -9,7 +9,7 @@ import {
 
 const initialState = {
   loading: false,
-  repos: [],
+  routine: [],
   error: '',
 }
 
@@ -24,13 +24,13 @@ const productReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        repos: action.payload,
+        routine: action.payload,
         error: '',
       }
     case FETCH_REPOS_FAILURE:
       return {
         loading: false,
-        repos: [],
+        routine: [],
         error: action.payload
       }
     default: return state

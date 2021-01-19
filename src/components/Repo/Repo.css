@@ -35,7 +35,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 40px;
+  padding: 40px 0px;
 }
 
 .routine-container .routine-icon img {
@@ -159,5 +159,202 @@
           box-shadow: 0px -4px 0px #FFBE3D;
   border-radius: 20px;
   margin-top: 20px;
+}
+
+.routine-container .first-layer {
+  width: 411px;
+  height: 40px;
+  background: #E5EFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.routine-container .first-layer .second-layer {
+  background: #CDDFFF;
+  width: 340px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.routine-container .first-layer .second-layer .third-layer {
+  background: #B7D0FE;
+  height: 40px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.routine-container .first-layer .second-layer .third-layer h2 {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bolder;
+  color: #00299F;
+  letter-spacing: 0.05em;
+}
+
+.routine-container .classes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.routine-container .classes .date {
+  width: 23px;
+  height: 40px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #535353;
+}
+
+.routine-container .classes .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  background: #F1F6FF;
+  border: 2px solid #2F78FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.routine-container .classes .schedule .subject-time {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10px;
+}
+
+.routine-container .classes .schedule .subject-time p {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.routine-container .classes .schedule .subject-time p:first-child {
+  font-weight: bold;
+  color: #0652DD;
+}
+
+.routine-container .classes .schedule .subject-time p:nth-child(2) {
+  font-weight: bold;
+  color: #FF6B00;
+}
+
+.routine-container .classes .schedule .subject-time p:last-child {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: #6B6B6B;
+}
+
+.routine-container .classes .schedule .classOrExam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.routine-container .classes .schedule .classOrExam .class-exam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2F78FF;
+  border: 1px solid #2F78FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+  padding: 0px 20px;
+}
+
+.routine-container .classes .schedule .classOrExam .class-exam small {
+  font-weight: bold;
+  font-size: 7px;
+  line-height: 9px;
+  color: #ffffff;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=Repo.css.map */

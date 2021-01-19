@@ -13,10 +13,10 @@ export const fetchRepoRequest = () => {
   }
 }
 
-export const fetchRepoSuccess = (repos) => {
+export const fetchRepoSuccess = (routine) => {
   return {
     type: FETCH_REPOS_SUCCESS,
-    payload: repos
+    payload: routine
   }
 }
 

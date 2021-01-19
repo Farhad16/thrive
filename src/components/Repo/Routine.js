@@ -1,7 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import routine from '../../assets/icons/routine.svg';
+import classIcon from '../../assets/icons/classIcon.svg';
+import arrow from '../../assets/icons/arrow.svg';
+import { connect } from 'react-redux';
+import { fetchRepos } from '../../redux/repo/repoActions';
 
-const Routine = () => {
+const Routine = ({ loading, routines, fetchRepos }) => {
+
+  useEffect(() => {
+    fetchRepos()
+  }, [])
+
+  const returnDate = mydate => {
+    const givenDate = mydate.toString().split('T')[0];
+    const dateInString = new Date(givenDate);
+    const onlyDate = dateInString.getDate();
+    const months = [
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    const onlyMonth = dateInString.getMonth();
+    const dayAndMonth = `${onlyDate} ${months[onlyMonth]}`
+    return dayAndMonth;
+  }
+
   return (
     <div className="routine-container">
       <div className="routine-icon">
@@ -22,9 +43,55 @@ const Routine = () => {
           <button className="join-now">Join Now</button>
         </div>
       </div>
-      div
+      <div className="first-layer">
+        <div className="second-layer">
+          <div className="third-layer">
+            <h2>MAY 2020</h2>
+          </div>
+        </div>
+      </div>
+
+      {
+        routines.map(routine => <div className="classes" key={routine.id}>
+          <div className="date">
+            <span>
+              {returnDate(routine.created_at)}
+            </span>
+          </div>
+          <div className="schedule">
+            <div className="subject-time">
+              <p>{routine.name}</p>
+              <p>{routine.language}</p>
+              <p>2:00pm - 3:30pm</p>
+            </div>
+            <div className="classOrExam">
+              <img src={arrow} alt="" />
+              <div className="class-exam">
+                <img src={classIcon} alt="" />
+                <small>Class</small>
+              </div>
+            </div>
+          </div>
+        </div>)
+      }
     </div>
   );
 };
 
-export default Routine;
+const mapStateToProps = state => {
+  return {
+    loading: state.users.loading,
+    routines: state.repos.routine,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchRepos: () => dispatch(fetchRepos()),
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Routine)
