@@ -28,8 +28,17 @@
     }
 
     .homeText {
-      color: #8E8E8E;
       padding-right: 5px;
+
+      a {
+        color: #8E8E8E;
+        text-decoration: none;
+        transition: all 0.4s ease;
+      }
+
+      a:hover {
+        color: #0055D8;
+      }
     }
 
     .profileText {

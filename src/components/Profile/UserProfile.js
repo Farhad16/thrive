@@ -3,6 +3,7 @@ import homeIcon from '../../assets/icons/home.svg';
 import editIcon from '../../assets/icons/editIcon.svg';
 import { connect } from 'react-redux';
 import { fetchUser } from '../../redux/user/userActions';
+import { Link } from 'react-router-dom';
 
 const UserProfile = ({ loading, userData, fetchUser }) => {
 
@@ -17,7 +18,7 @@ const UserProfile = ({ loading, userData, fetchUser }) => {
       <div className="showPath">
         <img src={homeIcon} alt="" />
         <p>
-          <span className="homeText">Home</span>&#x3e;<strong className="profileText">Profile</strong>
+          <span className="homeText"><Link to="home">Home</Link></span>&#x3e;<strong className="profileText">Profile</strong>
         </p>
       </div>
       <img className="profile-pic" src={userData.avatar_url} alt="" />

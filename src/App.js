@@ -10,6 +10,7 @@ import Profile from './components/Profile/Profile';
 import Repo from './components/Repo/Repo';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Login></Login>
-
+          </Route>
+          <Route path="/home">
+            <Home />
           </Route>
           <Route path="/profile">
             <Profile />

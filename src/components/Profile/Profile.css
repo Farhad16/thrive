@@ -44,8 +44,18 @@
 }
 
 .userProfile .showPath .homeText {
-  color: #8E8E8E;
   padding-right: 5px;
+}
+
+.userProfile .showPath .homeText a {
+  color: #8E8E8E;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.userProfile .showPath .homeText a:hover {
+  color: #0055D8;
 }
 
 .userProfile .showPath .profileText {
